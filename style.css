@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #444;
+    background-color: #ffffff;
+}
+
+h1 {
+    font-size: 350%;
+    font-weight: 500;
+    line-height: 4.5rem;
+}
+
+.header {
+    display: grid;
+    height: 3.5rem;
+    grid-template-columns: 1fr;
+    padding: 2rem 2rem 2rem 2rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.headerLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-self: first baseline;
+}
+
+.headerPage {
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    row-gap: 3rem;
+    max-width: 100%;
+    align-items: center;
+}
+
+.headerRight {
+    width: 100%;
+    display: flex;
+    align-self: flex-end;
+}
+
+.hidden {
+    display: none;
+}
+
+.highlight {
+    position: relative;
+}
+
+.highlight::after {
+    display: block;
+    background-color: rgba(43, 60, 76, 0.79);
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    transform: scale(1, 1) skewX(-15deg);
+}
+
+.learnMore {
+    height: 2rem;
+    width: 20%;
+    color: rgba(43, 60, 76, 0.79);
+    border: 0;
+    background-color: inherit;
+    border-bottom: 1px solid #585a5c;
+    font-weight: 600;
+    font-size: 100%;
+    margin-top: 7rem;
+}
+
+.learnMore:hover {
+    color: #ffffff;
+    border: 0;
+    background-color: rgba(43, 60, 76, 0.79);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.logo {
+    /* background-color: #A9C866; */
+    display: flex;
+    width: 15rem;
+    height: 3.5rem;
+    gap: 3rem;
+    align-items: center;
+}
+
+.logoImg {
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 150%;
+}
+
+.navBar {
+    display: grid;
+    grid-template-columns: 1fr 3fr 0.5fr;
+}
+
+.navLeft {
+    display: flex;
+    flex-direction: row;
+}
+
+.navRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 5rem;
+}
+
+.navMid {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
+    align-items: center;
+}
+
+.navBtn {
+    height: 2rem;
+    width: 15%;
+    border-radius: 30px;
+    padding: 0.2rem;
+    background-color: rgba(43, 60, 76, 0.79);
+    border: none;
+    color: #fff;
+}
+
+.navBtn:hover {
+    cursor: pointer;
+    background-color: rgba(43, 60, 76, 0.9);
+    font-weight: 600;
+}
+
+.profile {
+    height: 2rem;
+    width: 15%;
+}
+
+.profileImg {
+    height: 3rem;
+    border-radius: 50%;
+    border: 0.1px solid #444;
+    cursor: pointer;
+}
