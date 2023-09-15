@@ -1,9 +1,27 @@
 const container = document.querySelector('.container');
-const bars = document.querySelectorAll('.bar');
+const phoneProfileBtn = document.querySelector('.phoneProfileImg');
+const phoneProfileBtnMenuOpen = document.querySelector('.phoneProfileBtn');
+const phoneProfileMenu = document.querySelector('.phoneMenu');
+const phoneMenuBtn = document.querySelectorAll('.phoneMenuBtn');
 
-const myFunction = function () {
-    if (container.textContent === "X")
-        container.textContent = "==";
+const phoneToggleMenu = function () {
+    phoneProfileMenu.classList.toggle('hidden');
+    phoneProfileMenu.classList.toggle('phoneMenuDisplay');
+
+    if (phoneProfileMenu.classList.contains('phoneMenuDisplay')) {
+        phoneMenuBtn.forEach(function (phoneMenu) {
+            phoneMenu.style.height = "4rem";
+            phoneMenu.classList.remove('phoneMenuBtnHide');
+        });
+    }
+    else {
+        phoneMenuBtn.forEach(function (phoneMenu) {
+            phoneMenu.style.height = "0rem";
+            phoneMenu.classList.add('phoneMenuBtnHide');
+        });
+    }
 }
 
-container.addEventListener('click', myFunction());
+phoneProfileBtn.addEventListener('click', phoneToggleMenu);
+phoneProfileBtnMenuOpen.addEventListener('click', phoneToggleMenu);
+container.addEventListener('click', phoneToggleMenu);
