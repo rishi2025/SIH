@@ -71,6 +71,15 @@
     transition: all 1s;
 }
 
+.phoneMenuOverlay {
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 .container {
     cursor: pointer;
     font-size: 0.8rem;
@@ -105,5 +114,17 @@
 
     .learnMore {
         margin-top: 2rem;
+    }
+
+    .modal {
+        padding: 0.5rem 1rem;
+    }
+
+    .modalHeading {
+        font-size: 150%;
+    }
+
+    .menuOverlay {
+        display: none;
     }
 }

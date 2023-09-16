@@ -3,10 +3,13 @@ const phoneProfileBtn = document.querySelector('.phoneProfileImg');
 const phoneProfileBtnMenuOpen = document.querySelector('.phoneProfileBtn');
 const phoneProfileMenu = document.querySelector('.phoneMenu');
 const phoneMenuBtn = document.querySelectorAll('.phoneMenuBtn');
+const phoneMenuOverlay = document.querySelector('.phoneMenuOverlay');
+
 
 const phoneToggleMenu = function () {
     phoneProfileMenu.classList.toggle('hidden');
     phoneProfileMenu.classList.toggle('phoneMenuDisplay');
+    phoneMenuOverlay.classList.toggle('hiddenReal');
 
     if (phoneProfileMenu.classList.contains('phoneMenuDisplay')) {
         phoneMenuBtn.forEach(function (phoneMenu) {
@@ -25,3 +28,4 @@ const phoneToggleMenu = function () {
 phoneProfileBtn.addEventListener('click', phoneToggleMenu);
 phoneProfileBtnMenuOpen.addEventListener('click', phoneToggleMenu);
 container.addEventListener('click', phoneToggleMenu);
+phoneMenuOverlay.addEventListener('click', phoneToggleMenu);
