@@ -102,29 +102,6 @@
         height: 2.5rem;
     }
 
-    h1 {
-        font-size: 125%;
-        font-weight: 500;
-        line-height: 2.5rem;
-    }
-
-    .headerPage {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .learnMore {
-        margin-top: 2rem;
-    }
-
-    .modal {
-        padding: 0.5rem 1rem;
-    }
-
-    .modalHeading {
-        font-size: 150%;
-    }
-
     .menuOverlay {
         display: none;
     }

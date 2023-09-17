@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/jpeg" href="img/logo.jpg" />
-    <link href="style.css" rel="StyleSheet">
-    <link href="styleMedia.css" rel="StyleSheet">
+    <link href="teacherStyle.css" rel="StyleSheet">
+    <link href="teacherMedia.css" rel="StyleSheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,600;1,700&display=swap" rel="stylesheet">
@@ -23,8 +23,8 @@
                     ==
                 </div>
                 <div class="phoneMenu hidden">
-                    <button class="phoneProfileBtn"><img class="phoneProfileImg" src="img/profileIcon.png" alt=""> </button>
-                    <a class="phoneMenuBtn" href="teacherFile/teacher.html"><button class="phoneMenuBtn phoneMenuBtnHide">Sign In</button></a>
+                    <a class="phoneMenuBtn" href="teacher.html"><button class="phoneMenuBtn phoneMenuBtnHide">Sign In</button></a>
+                    <button class="phoneMenuBtn phoneMenuBtnHide">Sign In</button>
                     <button class="phoneMenuBtn phoneMenuBtnHide">Sign In</button>
                     <button class="phoneMenuBtn phoneMenuBtnHide">Sign In</button>
                     <button class="phoneMenuBtn phoneMenuBtnHide">About Us</button>
@@ -49,50 +49,40 @@
                 <img class="profileImg" src="img/profileIcon.png" alt="">
                 <div class="menu hidden">
                     <button class="profileBtn"><img class="profileImg" src="img/profileIcon.png" alt=""> </button>
-                    <a class="menuBtn" href="teacherFile/teacher.html"><button class="menuBtn">Sign In</button></a>
+                    <a class="menuBtn" href="teacher.html"><button class="menuBtn">Sign In</button></a>
                     <button class="menuBtn">Sign In</button>
                     <button class="menuBtn">Sign In</button>
                 </div>
             </div>
-        </div>
-        <div class="headerPage">
-            <div class="headerLeft">
-                <div class="headerTitle">
-                    <h1>
-                        Doubt Buster
-                        <br>
-                        Your
-                        <span class="highlight" style="color: #fff;">
-                            24 / 7
-                        </span>
-                        Genius-on-Call
-                    </h1>
-                </div>
-                <a href="#pg1" > <button class="learnMore">JOIN US</button> </a>
-            </div>
-            <img class="headerRight" src="img/headerPicture.png" alt="Image">
         </div>
     </div>
-    <div class="overlay hiddenReal"></div>
     <div class="menuOverlay hiddenReal"></div>
     <div class="phoneMenuOverlay hiddenReal"></div>
-    <div class="modal hiddenReal">
-        <button class="modalClose">&times;</button>
-        <div class="modalHeading">
-            Book your live session <br>
-            in just <span class="highlight" style="color: #fff;"> 5 minutes </span>
+
+    <div class="table">
+        <div class="img">
+            <img src="img/profileIcon.png" class="tableImg">
+            <div class="rating"><h3>Rating</h3></div>
+            <hr class="imgDiv">
+            <div class="info">
+                <div class="firstLine">
+                    <button class="about">ABOUT</button>
+                    <img class="edit" src="img/edit.png">
+                </div>
+                <form class="exp">
+                    <label class="tag">Experience</label>
+                    <input class="inp" type="text" placeholder="Experience">
+                    <label class="tag">Current Employment</label>
+                    <input class="inp" type="text" placeholder="Current Employment">
+                </form>
+            </div>
         </div>
-        <form class="modalForm">
-            <label>Name</label>
-            <input type="text">
-            <label>Phone Number</label>
-            <input type="text">
-            <label>Email Address</label>
-            <input type="email">
-            <button class="modalSubmit">BOOK NOW &rarr;</button>
-        </form>
+        <div class="forms">
+
+        </div>
     </div>
-    <script src="script.js"></script>
-    <script src="scriptMedia.js"></script>
+
+    <script src="teacherScript.js"></script>
+    <script src="teacherMediaScript.js"></script>
 </body>
 </html>
