@@ -10,10 +10,21 @@ body {
     background-color: #ffffff;
 }
 
+a {
+    text-decoration: none;
+}
+
 .about {
     width: 35%;
     color: #fff;
     background-color: rgba(43, 60, 76, 0.79);
+}
+
+.accountType {
+    width: 100%;
+    text-align: center;
+    padding-top: 0.5rem;
+    font-size: 180%;
 }
 
 .choices {
@@ -67,7 +78,7 @@ body {
 .forms {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .header {
@@ -113,7 +124,7 @@ body {
     gap: 2rem;
     border-right: 1px #444 solid;
     padding-top: 2rem;
-    min-height: 1000vh - 7rem;
+    padding-bottom: 2rem;
 }
 
 .imgDiv {
@@ -255,6 +266,8 @@ body {
 
 .name {
     font-size: 150%;
+    color: #444;
+    text-decoration: none;
 }
 
 .nameEmail {
