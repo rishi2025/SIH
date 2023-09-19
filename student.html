@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpeg" href="img/logo.jpg" />
+    <link href="studentStyle.css" rel="StyleSheet">
+    <link href="studentMedia.css" rel="StyleSheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Demo EdTech</title>
+</head>
+<body>
+    <div class = "header">
+        <div class="phoneNavBar">
+            <div class="logo">
+                <a href="https://rishi2025.github.io/SIH/"><img class="logoImg" src="img/logo.jpg"></a>
+                    <a href="https://rishi2025.github.io/SIH/"><p class="name">EdGuru</p></a>
+            </div>
+            <div class = "phoneNavBarRight">
+                <div class="container">
+                    ==
+                </div>
+                <div class="phoneMenu hidden">
+                    <button class="phoneProfileBtn"><img class="phoneProfileImg" src="img/profileIcon.png" alt=""> </button>
+                    <a class="phoneMenuBtn" href="student.html"><button class="phoneMenuBtn phoneMenuBtnHide">Student Sign In</button></a>
+                    <button class="phoneMenuBtn phoneMenuBtnHide">Sign In</button>
+                    <button class="phoneMenuBtn phoneMenuBtnHide">Sign In</button>
+                    <button class="phoneMenuBtn phoneMenuBtnHide">About Us</button>
+                    <button class="phoneMenuBtn phoneMenuBtnHide">Contact Us</button>
+                    <button class="phoneMenuBtn phoneMenuBtnHide">Help Us</button>
+                </div>
+            </div>
+        </div>
+        <div class="navBar">
+            <div class="navLeft">
+                <div class="logo">
+                    <a href="https://rishi2025.github.io/SIH/"><img class="logoImg" src="img/logo.jpg"></a>
+                    <a href="https://rishi2025.github.io/SIH/"><p class="name">EdGuru</p></a>
+                </div>
+            </div>
+            <div class="navMid">
+                <button class="navBtn">About Us</button>
+                <button class="navBtn">Contact Us</button>
+                <button class="navBtn">Help Us</button>
+            </div>
+            <div class="navRight">
+                <img class="profileImg" src="img/profileIcon.png" alt="">
+                <div class="menu hidden">
+                    <button class="profileBtn"><img class="profileImg" src="img/profileIcon.png" alt=""> </button>\
+                    <a class="menuBtn" href="student.html"><button class="menuBtn">Student Sign In</button></a>
+                    <button class="menuBtn">Sign In</button>
+                    <button class="menuBtn">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menuOverlay hiddenReal"></div>
+    <div class="phoneMenuOverlay hiddenReal"></div>
+
+    <div class="table">
+        <div class="img">
+            <img src="img/profileIcon.png" class="tableImg">
+            <div class="rating"><h3>Doubts Asked</h3></div>
+            <hr class="imgDiv">
+            <div class="info">
+                <div class="firstLine">
+                    <button class="about">ABOUT</button>
+                    <img class="edit" src="img/edit.png">
+                </div>
+                <form class="exp">
+                    <label class="tag">SCHOOL</label>
+                    <input class="inp" type="text" placeholder="SCHOOL">
+                </form>
+            </div>
+        </div>
+        <div class="forms">
+            <h1 class="accountType">STUDENT ACCOUNT</h1>
+            <div class="nameEmail">
+                <div class="firstRowNameEmail">
+                    <label class="tag">FIRST NAME <span style="color: red;">*</span></label>
+                    <input class="inp1" type="text" placeholder="First Name">
+                </div>
+                <div class="firstRowNameEmail">
+                    <label class="tag">LAST NAME</label>
+                    <input class="inp1" type="text" placeholder="Last Name">
+                </div>
+                <div class="firstRowNameEmail">
+                    <label class="tag">EMAIL ID<span style="color: red;">*</span></label>
+                    <input class="inp1" type="email" placeholder="Email Id">
+                </div>
+            </div>
+            <div class="choices">
+                <div class="firstRowNameEmail">
+                    <label class="tag">SCHOOL<span style="color: red;">*</span></label>
+                    <input class="inp1" type="text" placeholder="School Name">
+                </div>
+                <div class="dropdown">
+                    <label class="tag">CLASS<span style="color: red;">*</span></label>
+                    <div class="dropdownList">
+                        <div>
+                            <label class="inp2">
+                                <input type="checkbox" class="chkbx">
+                                CLASS 6
+                            </label>
+                        </div>
+                        <div >
+                            <label class="inp2">
+                                <input type="checkbox" class="chkbx">
+                                CLASS 7
+                            </label>
+                        </div>
+                        <div>
+                            <label class="inp2">
+                                <input type="checkbox" class="chkbx">
+                                CLASS 8
+                            </label>
+                        </div>
+                        <div>
+                            <label class="inp2">
+                                <input type="checkbox" class="chkbx">
+                                CLASS 9
+                            </label>
+                        </div>
+                        <div>
+                            <label class="inp2">
+                                <input type="checkbox" class="chkbx">
+                                CLASS 10
+                            </label>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="saveRow">
+                <button class="modalSubmit">SAVE</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="studentScript.js"></script>
+    <script src="studentMediaScript.js"></script>
+</body>
+</html>
