@@ -98,11 +98,51 @@
         font-size: 0.8rem;
     }
 
+    .header {
+        position: fixed;
+        top: 0;
+        opacity: 1;
+        background-color: #fff;
+    }
+
     .logoImg {
         height: 2.5rem;
     }
 
     .menuOverlay {
         display: none;
+    }
+
+    .table {
+        margin-top: 7rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .choices {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .nameEmail {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .forms {
+        width: 80%;
+        gap: 2rem;
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .img {
+        width: 80%;
+        border: none;
+        margin-bottom: 2rem;
     }
 }
